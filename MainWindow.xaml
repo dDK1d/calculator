@@ -7,25 +7,24 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="WpfApp1.MainWindow"
         mc:Ignorable="d"
         WindowStyle="None"
-        Title="Калькулятор" Height="400" Width="300" ResizeMode="NoResize" ShowInTaskbar="False">
+        Title="Калькулятор" Height="255" Width="170" ResizeMode="NoResize">
     <Grid>
-
-        <Grid x:Name="MainRoot" Background="white" Margin="0,23,0,0">
+        <Grid x:Name="MainRoot" Background="white" Margin="0,54,0,0" >
 
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="69"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.ColumnSpan="4" x:Name="text"/>
+            <TextBlock Grid.ColumnSpan="4" x:Name="text" Background="#FFE5D7FF" Margin="0,0,0,10" Foreground="#FF673AB7" FontFamily="Wingdings 2" FontSize="30" />
             <Button Grid.Column="0" Grid.Row="1" Content="1"/>
             <Button Grid.Column="1" Grid.Row="1" Content="2"/>
             <Button Grid.Column="2" Grid.Row="1" Content="3"/>
@@ -43,10 +42,10 @@
             <Button Grid.Column="2" Grid.Row="4" Content="="/>
             <Button Grid.Column="3" Grid.Row="4" Content="/"/>
         </Grid>
-        <Button Margin="231,10,10,364" Height="Auto" Click="Button_Click_1">
+        <Button Margin="101,23,0,0" Height="26" Click="Button_Click_1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="59">
             <materialDesign:PackIcon Kind="ExitToApp"/>
         </Button>
-        <Button Margin="167,10,74,364" Height="Auto">
+        <Button Margin="10,23,0,0" Height="26" Click="Button_Click_2" VerticalAlignment="Top" HorizontalAlignment="Left" Width="59">
             <materialDesign:PackIcon Kind="WindowMinimize"/>
         </Button>
     </Grid>
