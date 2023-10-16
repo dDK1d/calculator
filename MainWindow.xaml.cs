@@ -38,5 +38,9 @@ namespace WpfApp1
                 text.Text += str;
         }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Quit();
+        }
     }
 }
